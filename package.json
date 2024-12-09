@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:chrome": "npx cypress run --browser=chrome --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "allure-commandline": "^2.32.0",
     "cypress": "^13.16.1",
+    "mocha-allure-reporter": "^1.4.0",
     "typescript": "^5.7.2"
   }
 }
