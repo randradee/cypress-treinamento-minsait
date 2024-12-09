@@ -1,4 +1,5 @@
 const elements = require('./elements').ELEMENTS;
+const sharedElements = require('../shared/elements').ELEMENTS
 
 class LoginPage {
     verificarTituloLoginPage(){
@@ -24,7 +25,7 @@ class LoginPage {
     }
 
     verificarLoginRealizado(){
-        cy.get(elements.tituloHomePage).should('have.text', 'Products')
+        cy.get(sharedElements.tituloPaginaAtual).should('have.text', 'Products')
     }
 
     verificarMensagemErroLogin(texto: string){

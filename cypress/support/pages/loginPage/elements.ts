@@ -4,6 +4,5 @@ export const ELEMENTS = {
     usernameInput: '#user-name',
     passwordInput: '#password',
     loginBtn: '#login-button',
-    tituloHomePage: '[data-test="title"]',
     tituloErroLoginSemSucesso: '[data-test="error"]',
 };
