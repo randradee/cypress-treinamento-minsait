@@ -15,7 +15,7 @@ describe('Login', () => {
         });
     })
 
-    it.only('Realizar login sem sucesso', () => {
+    it('Realizar login sem sucesso', () => {
         cy.fixture('loginData.json').then((loginData) => {
             loginPage.digitarUsuario(loginData.usuarioPadrao);
             loginPage.digitarSenha(loginData.senhaIncorreta);
