@@ -1,0 +1,7 @@
+{
+    "usuarioPadrao": "standard_user",
+    "usuarioErro": "error_user",
+    "senha": "secret_sauce",
+    "senhaIncorreta": "123456",
+    "textoErroLoginSemSucesso": "Epic sadface: Username and password do not match any user in this service"
+}
